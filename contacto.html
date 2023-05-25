@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!– fonts –> 
+    <link href="https://fonts.cdnfonts.com/css/she-smiles" rel="stylesheet">
+    
+    <!– footer –> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Something</title>
+</head>
+<body>
+<div id="container">
+
+<header>
+    <nav class="menu-principal">
+        <ul class="navegador-principal">
+            <li class="titulo"><h1>S O M E T H I N G</h1></li>
+            <li class="lista"><a href="index.html">Tienda</a></li>
+            <li class="lista"><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <nav class="menu-secundario">
+     <ul class="navegador-secundario">
+            <li class="list"><a href="index.html">Nuevo</a></li>
+            <li class="list"><a href="accesorios.html">Accesorios</a></li>
+            <li class="list"><a href="camisas.html">Camisas</a></li>
+            <li class="list"><a href="sudaderas.html">Sudaderas</a></li>
+        </ul>
+    </nav>
+</header>
+ 
+ <br>
+
+<section class="contacto">
+    <div class="contacto-imagen">
+        <img src="" alt="" class="imagen">
+        </div>
+        <div class="contacto-derecho">
+            <h1 class="contacto-titulo"> Contactanos </h1>
+            <form action="" class="formulario-contacto">
+                <div class="contacto-input">
+                    <label for="nombre" class="contact-label">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="contact-info">
+                </div>
+                <div class="contacto-input">
+                    <label for="email" class="contact-label">Email</label>
+                    <input type="email" name="email" id="email" class="contact-info">
+                </div>
+                <div class="contacto-input">
+                    <label for="subject" class="contact-label">Asunto</label>
+                    <input type="text" name="subject" id="subject" class="contact-info">
+                </div>
+                <div class="contacto-input">
+                    <label for="mensaje" class="contact-label">Mensaje</label>
+                    <input type="message" name="mensaje" id="mensaje" class="contact-info">
+                </div>
+                <input type="submit" value="Enviar" class="contact-button">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+    <div class="container">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>Contactame</h2>
+        <p>Si estas interesado en contactarme, puedes hacerlo a traves de cualquiera de las siguientes redes sociales</p>
+        <div class="contact-links">
+          <a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="http://www.instagram.com/chaeyo.0" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.twitter.com/miperfil" target="_blank"><i class="fab fa-twitter"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    //con lo siguiente, hare 
+  const socialnetworks = document.querySelectorAll('.contact-links a');
+  socialnetworks.forEach(link =>{
+    link.addEventListener('click', e =>{
+      e.preventDefault();
+      window.open(link.href, '_blank');
+    });
+  });
+</script>
+        
+</div>
+</body>
+</html>

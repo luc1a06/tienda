@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!– fonts –> 
+    <link href="https://fonts.cdnfonts.com/css/she-smiles" rel="stylesheet">
+    
+    <!– footer –> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Something</title>
+</head>
+<body>
+<div id="container">
+
+<header>
+    <nav class="menu-principal">
+        <ul class="navegador-principal">
+            <li class="titulo"><h1>S O M E T H I N G</h1></li>
+            <li class="lista"><a href="index.html">Tienda</a></li>
+            <li class="lista"><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <nav class="menu-secundario">
+     <ul class="navegador-secundario">
+            <li class="list"><a href="index.html">Nuevo</a></li>
+            <li class="list"><a href="accesorios.html">Accesorios</a></li>
+            <li class="list"><a href="camisas.html">Camisas</a></li>
+            <li class="list"><a href="sudaderas.html">Sudaderas</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa1.png" alt="">
+                    </div>
+                    <p class="descripcion">untilin</p>
+                    <span class="precio">$ 1.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>dostilines </p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa3.png" alt="">
+                    </div>
+                    <p class="descripcion">tres tilines</p>
+                    <span class="precio">$ 3.600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa4.png" alt="">
+                    </div>
+                    <p class="descripcion">sisi</p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa5.png" alt="">
+                    </div>
+                    <p class="descripcion">top 3 canciones d loona</p>
+                    <span class="precio">$ 130</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa6.png" alt="">
+                    </div>
+                    <p class="descripcion">noooooooo</p>
+                    <span class="precio">$ 2.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa7.png" alt="">
+                    </div>
+                    <p class="descripcion">yoyoyo</p>
+                    <span class="precio">$ 2.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camisa8.png" alt="">
+                    </div>
+                    <p class="descripcion">unforgiven</p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+<footer>
+    <div class="container">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>Contactame</h2>
+        <p>Si estas interesado en contactarme, puedes hacerlo a traves de cualquiera de las siguientes redes sociales</p>
+        <div class="contact-links">
+          <a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="http://www.instagram.com/chaeyo.0" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.twitter.com/miperfil" target="_blank"><i class="fab fa-twitter"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    //con lo siguiente, hare 
+  const socialnetworks = document.querySelectorAll('.contact-links a');
+  socialnetworks.forEach(link =>{
+    link.addEventListener('click', e =>{
+      e.preventDefault();
+      window.open(link.href, '_blank');
+    });
+  });
+</script>
+
+</div>
+</body>
+</html>
